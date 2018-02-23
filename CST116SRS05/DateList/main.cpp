@@ -14,32 +14,24 @@ int main()
 	int m1{};
 	int d{  };
 	int d1{};
+	char dors{};
 
 
-	std::cin >> y;
-	std::cin.ignore(256, ' ');
-	std::cin >> m;
-	std::cin.ignore(256, ' ');
-	std::cin >> d;
-	std::cin >> y1;
-	std::cin.ignore(256, ' ');
-	std::cin >> m1;
-	std::cin.ignore(256, ' ');
-	std::cin >> d1;
+	std::cin >> y >> dors >> m >> dors >> d;
+	std::cin >> y1 >> dors >> m1 >> dors >> d1;
 
-	if (y >= 1901 & y <= 2099)
+	while(y >= 1901 && y <= 2099 && y1 >= 1901 && y1 <= 2099 && m >= 1 && m <= 12 && m1 >= 1 & m1 <= 12)
 	{
-		if (y1 >= 1901 & y1 <= 2099)
+		if (y > y1 || (y == y1 && m > m1) || (y == y1 && m == m1 && d > d1))
 		{
 
 		}
+		if (y1 > y || (y == y1 && m1 > m) || (y == y1 && m == m1 && d1 > d))
+		{
 
+		}
 	}
-
-	else
-	{
-		std::cout << "Stop being bad!! Restart";
-	}
-    return 0;
+    return 1;
 }
-
+/*leap years start 1904*/
+//leap year bool leapyear = y % 4 == 0
