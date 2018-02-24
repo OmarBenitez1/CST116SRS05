@@ -2,11 +2,11 @@
 Date List
 
 
-Class ID:  
+Class ID:  Eelektrik
 
 SRS ID: CST116SRS05  
 
-Unresolved Issues:  
+Unresolved Issues:  Possibly not finished. Won't show outputs.
 
 Notes:  
 
